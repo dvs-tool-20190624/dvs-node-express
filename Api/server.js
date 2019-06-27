@@ -14,7 +14,7 @@ server.use(cors());
 
 // Use Routers
 // server.use("/api/Users", usersRoute);
-// usersRoute(server);
+usersRoute(server);
 // server.use("/api/actions", actionsRouter);
 
 // Server Test
