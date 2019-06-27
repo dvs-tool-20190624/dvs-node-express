@@ -9,7 +9,7 @@ exports.up = function(knex, Promise) {
       .string("username", 128) //username
       .notNullable()
       .unique()
-      .references("id");
+      .references("id"); //foreign key
 
     users
       .string("password", 128) //password
