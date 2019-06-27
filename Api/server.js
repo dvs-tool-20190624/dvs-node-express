@@ -1,6 +1,6 @@
-const express = require("./node_modules/express");
-const cors = require("./node_modules/cors");
-const helmet = require("./node_modules/helmet");
+const express = require("express");
+const cors = require("cors");
+const helmet = require("helmet");
 const server = express();
 
 // Import Routers
