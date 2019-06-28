@@ -1,7 +1,7 @@
-const server = require("../api/server");
+const server = require("../Api/server");
 const request = require("supertest");
 const db = require('../db/dbconfig');
-const users = require('../users/usersModel');
+const users = require('../Users/usersModel');
 require("dotenv").config();
 
 describe("GET/api", () => {
