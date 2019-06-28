@@ -9,6 +9,12 @@ exports.up = function(knex, Promise) {
     table.text("content");
     table.string("amount");
     table.timestamps(true, true); // true for created at and true for updated
+    table
+      .foreign("user_id")
+      .references("id")
+      .inTable("users")
+      .onDelete("CASCADE")
+      .onUpdate("CASCADE");
   });
 };
 
