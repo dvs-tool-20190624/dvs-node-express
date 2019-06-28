@@ -7,7 +7,7 @@ exports.up = function(knex, Promise) {
     table.text("required_cost").notNullable(); //must be required
     table.text("relocation_cost").notNullable(); //must be required
     table.text("content");
-    table.string("amount");
+    table.float("amount");
     table.timestamps(true, true); // true for created at and true for updated
     table
       .foreign("user_id")
