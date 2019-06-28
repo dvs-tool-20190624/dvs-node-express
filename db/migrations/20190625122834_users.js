@@ -3,13 +3,12 @@
 exports.up = function(knex, Promise) {
   return knex.schema.createTable("users", users => {
     //Table name
-    users.increments(); // primary
+    users.increments("id"); // primary
 
     users
       .string("username", 128) //username
       .notNullable()
-      .unique()
-      .references("id"); //foreign key
+      .unique();
 
     users
       .string("password", 128) //password
